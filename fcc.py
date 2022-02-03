@@ -72,7 +72,7 @@ def test_files(cmd):
         offset -= limit
         cmd[1] = "list"
     if cmd[1] == 'list':
-        ret = apiv4.get_files("conference_recording", offset, limit, True)
+        ret = apiv4.get_files("broadcast_resource", offset, limit, True)
         files = ret["files"]
         print(f'{"#":4}|'
               f'{"ID".center(40)}|'
@@ -132,7 +132,7 @@ while True:
         line = input("Enter command> ").split()
         if line[0] == 's':
             if not test_subscription(line):
-                print("unknown file command, use 'list', 'next', 'prev','upload', 'delete', 'set', 'limit'")
+                print("unknown subscription command, use 'my'")
         elif line[0] == 'b':
             if not test_broadcasting(line):
                 print("unknown broadcasting command, use 'start', 'stop', 'pause','resume', 'pos'")
