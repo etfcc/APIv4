@@ -6,6 +6,8 @@ URL = "https://www.freeconferencecall.com/api/v4/"
 auth = ""
 </pre>
 
+Sample session will be like:
+
 <pre>
 Enter command> f list 
 #   |                   ID                   |    Description     |  Media   | Duration |    Created    
